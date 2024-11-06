@@ -18,7 +18,7 @@ clf = joblib.load("C:/Users/82104/IdeaProjects/suver/kw_model.pkl")
 keybert_model = KeyBERT()
 
 # Initialize Gradio client
-client = Client("ashawkey/LGM", hf_token="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")
+client = Client("ashawkey/LGM", hf_token="") #huggingface의 토큰이 필요함
 
 class Message(BaseModel):
     role: str
